@@ -63,58 +63,60 @@ public class percentagecal {
         float sum = sub1+sub2+sub3+sub4+ sub5 ;   
         float per = sum/500 * 100 ; 
         System.out.println("Your Percentage is " + per +" %");
-
+//METHOD----------------------------------------------------------------------------------------1
     // sc.nextLine();
     
-        System.out.println("Do You Want To Convert Your Percenatge to CGPA or SGPA ?(YES or No)");
-        System.out.println("A. YES");
-        System.out.println("B. NO");
-            String st = new String();
-           st = sc.next();
-                switch (st) {
-                    case "YES":
-                    System.out.println("Make a Choice:(1 or 2) \n 1. CGPA \n 2. SGPA");
-                        float choice = sc.nextFloat();
-                            if(choice==1){
-                                System.out.println("Your CGPA is "+per/9.5);
-                                break;
-                            }else if(choice==2){
-                                System.out.println("Your SGPA is "+(per+7.5)/10);
-                                break;
-                            }
+        // System.out.println("Do You Want To Convert Your Percenatge to CGPA or SGPA ?(YES or No)");
+        // System.out.println("A. YES");
+        // System.out.println("B. NO");
+        //     String st = new String();
+        //    st = sc.next();
+        //         switch (st) {
+        //             case "YES":
+        //             System.out.println("Make a Choice:(1 or 2) \n 1. CGPA \n 2. SGPA");
+        //                 float choice = sc.nextFloat();
+        //                     if(choice==1){
+        //                         System.out.println("Your CGPA is "+per/9.5);
+        //                         break;
+        //                     }else if(choice==2){
+        //                         System.out.println("Your SGPA is "+(per+7.5)/10);
+        //                         break;
+        //                     }
 
                         
-                        break;
+        //                 break;
 
-                    case "NO":
-                                System.out.println("Thank you. Visit again");
-                        break;
+        //             case "NO":
+        //                         System.out.println("Thank you. Visit again");
+        //                 break;
                 
-                    default:
-                        break;
-                }
+        //             default:
+        //                 break;
+        //         }
 
 
+//METHOD-----------------------------------------------------------------------------------------------2
+        System.out.println("Do You Want To Convert Your Percenatge to CGPA or SGPA ?(YES or No)");
+            String st = new String();
+            System.out.println("1. YES \n2. No ");
+            st = sc.next();
 
-            // String st = new String("Yeah");
-        //     String st2 = new String("No");
-        // System.out.println(st);
-        // System.out.println(st2);
-        //         st = sc.nextLine();
-        //         st2 = sc.nextLine();
-
-        //     if(st.equalsIgnoreCase("Yeah")) { //Yeah
-        //          float No1 , No2 ;
-        //             System.out.println("Choose The Option As Your Choice.\n No1. CGPA \n No2. SGPA");
-        //                 No1 = sc.nextFloat();
-        //                 No2 = sc.nextFloat();
-
-        //     }            if(choice == No1){
-        //         System.out.println(per/9.5);
-        //     }
-        //     else if (st2.equalsIgnoreCase("No")){ //no
-        //         System.out.println("Thank You For Using Calculator");  
-        //     }
+            if(st.equalsIgnoreCase("YES")) { //Yeah
+                 
+                    System.out.println("Choose The Option As Your Choice.\n No1. CGPA \n No2. SGPA");
+                           String st3 = sc.next();
+                            if(st3.equalsIgnoreCase("CGPA")){
+                                System.out.println("Your CGPA is "+per/9.5);
+                            }else if(st3.equalsIgnoreCase("SGPA")){
+                                System.out.println("Your SGPA is "+(per+7.5)/10);
+                            }
+                         }
+            
+            else if (st.equalsIgnoreCase("NO")){ //no
+                System.out.println("Thank You For Using Calculator");  
+            }
+        
+            
 
     sc.close();
         }
